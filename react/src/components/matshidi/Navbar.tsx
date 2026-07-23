@@ -1,7 +1,7 @@
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
-import logo from "@/assets/matshidi-logo.png.asset.json";
+import logo from "@/assets/matshidi-logo.png";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { cn } from "@/lib/utils";
 
@@ -38,7 +38,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <button onClick={() => go("hero")} className="flex items-center gap-2 group">
-          <img src={logo.url} alt="Matshidi Group" className="h-9 w-auto sm:h-10 drop-shadow-[0_0_18px_rgba(212,175,55,0.25)] transition-transform group-hover:scale-105" />
+          <img src={logo} alt="Matshidi Group" className="h-9 w-auto sm:h-10 drop-shadow-[0_0_18px_rgba(212,175,55,0.25)] transition-transform group-hover:scale-105" />
         </button>
 
         <nav className="hidden lg:flex items-center gap-1">
